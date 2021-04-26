@@ -1,0 +1,9 @@
+/*
+Problema:
+
+Escribe un programa que encuentre todos los numeros divisibles entre 7, pero que no sean multiplos de 5
+entre 2000 y 3200.
+Los numeros deben de ir separados por una coma al mostrarse en pantalla
+
+*/
+
