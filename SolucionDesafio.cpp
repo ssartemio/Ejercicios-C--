@@ -10,9 +10,11 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    for(int i = 2000;i<=3200;i++){
-        if((i%7==0) && (i%5!=0)){
-            cout<<i<<",";
+    for (int i = 2000; i <= 3200; i++)
+    { // condicion inicial; evaluacion; incremento
+        if (i % 7 == 0 && i % 5 != 0)
+        { //2765 / 5 = 553 y residuo cero
+            cout << i << ", ";
         }
     }
     return 0;
