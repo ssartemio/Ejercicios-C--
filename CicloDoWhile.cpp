@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -7,13 +8,14 @@ int suma(); // delcaracion de una funcion, concepto nuevo.
 int resta();
 int multiplicacion();
 int division();
+int potencia();
 
 int main()
 {
     // El valor debe de ser declarado fuera del ciclo while, a fin de utilizar despues dicho valor
     int opcion{0}; // nueva forma de inicializar valores.
-
-    while (opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4) // forzar la seleccion valida
+    //agregar la opcion necesaria para que sea valida
+    while (opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4 && opcion != 5) // forzar la seleccion valida
     {
         cout << "Elige una opcion: \n";
         cout << "1) Suma\n";
@@ -40,8 +42,8 @@ int main()
     else if (opcion == 4)
     {
         cout<<division();
-    }else {
-
+    }else if(opcion == 5){
+        cout<<potencia();
     }
 
     return 0;
@@ -78,3 +80,13 @@ int division() // desarrollo de una funcion
     cin >> a >> b;
     return a / b;
 }
+
+int potencia()
+{
+    int a,b;
+    cout << "Dame dos numeros: ";
+    cin >> a >> b;
+    return pow(a,b);
+}
+
+// desarrollar el codigo
