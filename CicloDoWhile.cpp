@@ -13,22 +13,21 @@ int main()
     // El valor debe de ser declarado fuera del ciclo while, a fin de utilizar despues dicho valor
     int opcion{0}; // nueva forma de inicializar valores.
 
-    while (opcion != 1 && opcion != 2 &&
-           opcion != 3 && opcion != 4)
+    while (opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4) // forzar la seleccion valida
     {
         cout << "Elige una opcion: \n";
         cout << "1) Suma\n";
         cout << "2) Resta\n";
         cout << "3) Multiplicacion\n";
         cout << "4) Division\n";
-        // cout << "5) Potencia\n"; // Ejercicio en clase 1.
+        cout << "5) Potencia\n"; // Ejercicio en clase 1.
         cin >> opcion;
     }
 
     cout << "Tu seleccionaste la  opcion # " << opcion << "\n"; // ejercicio 2 cambiar IF-ELSE por SWITCH-CASE
     if (opcion == 1)
     {
-        cout << suma();
+        cout << suma(); // salto
     }
     else if (opcion == 2)
     {
